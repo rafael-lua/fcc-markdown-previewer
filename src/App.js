@@ -1,8 +1,8 @@
 function App() {
   return (
-    <div>
-      <header>
-        
+    <div className="container">
+      <header className="header">
+        <h1 className="header-title">MARKDOWN PREVIEWER</h1>
       </header>
     </div>
   );
