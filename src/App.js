@@ -6,9 +6,9 @@ function App() {
     <div className="container">
       <header className="header">
         <h1 className="header-title">MARKDOWN PREVIEWER</h1>
-        <Editor />
-        <Previewer />
       </header>
+      <Editor />
+      <Previewer />
     </div>
   );
 }
