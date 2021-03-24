@@ -1,16 +1,21 @@
 import actions from "./actions"
 
-// State has only a initial value, that will be updated once the quotes are asynchronously loaded
-const appStates = {
-  
+// State initial values
+const editorState = {
+  showHtml: ""
 };
 
-const reducer = (state = appStates, action) => {
+const reducer = (state = editorState, action) => {
   switch(action.type) {
 
     case actions.DEBUG:
       console.log("ACTION SENT. MESSAGE: " + action.msg);
       return state;
+
+    case actions.SET_EDITOR_VALUE:
+      return Object.assign({}, state, {
+        showHtml: action.value
+      });
 
     default:
       return state;

@@ -65,4 +65,5 @@ body {
   border-radius: 5px;
   color: #BBC4C2;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-height: 50px;
 }
