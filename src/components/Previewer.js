@@ -1,6 +1,9 @@
 import { connect } from "react-redux"; // Component will be exported through the connect
 import { useEffect } from "react";
 const marked = require("marked");
+marked.setOptions({
+  breaks: true
+});
 
 const Previewer = (props) => {
 
@@ -14,9 +17,9 @@ const Previewer = (props) => {
   return (
     <div className="container">
       <div className="previewer-area">
-          <div id="preview">
+          <p id="preview">
             
-          </div>
+          </p>
       </div>      
     </div>
   )

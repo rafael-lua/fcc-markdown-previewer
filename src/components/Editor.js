@@ -14,7 +14,7 @@ const Editor = (props) => {
           cols="30" 
           rows="15" 
           placeholder="Type some markdown..."
-          defaultValue="I'm the editor"
+          defaultValue={props.showHtml}
           onChange={(e) => props.setEditorValue(e.target.value)}
         >
         </textarea>

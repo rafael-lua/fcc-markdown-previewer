@@ -20,6 +20,16 @@ body {
   background-color: #464033;
 }
 
+ul {
+  list-style-type: none;
+  margin-left: 1em;
+}
+
+blockquote {
+  margin-left: 1.25em;
+  font-style: italic;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
